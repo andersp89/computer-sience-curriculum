@@ -8,8 +8,8 @@ Completed course [Algorithms I](https://www.coursera.org/learn/algorithms-part1)
 
 ## Projects of part I
 * [Week 1: Union-Find, Analysis of Algorithms](projects-part1/project01)
- - **Percolation.java** - A model for the percolation problem, determines if a 2d system of open / closed sites percolates from top to bottom.
- - **PercolationStats.java** - Generates statistics using the percolation model.
+	* **Percolation.java** - A model for the percolation problem, determines if a 2d system of open / closed sites percolates from top to bottom.
+	* **PercolationStats.java** - Generates statistics using the percolation model.
 * [Week 2: Stacks and Queues, Elementary Sorts](projects-part1/project02)
  - **Deque.java** - A generic double ended queue implementation, double-linked list based.
  - **RandomizedQueue.java** - A generic random queue implementation, array based.
