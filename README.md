@@ -8,4 +8,4 @@ Please find courses in Computer Science by Anders Pedersen, below.
 * [Elements of Computing Systems I & II](5_Elements%20of%20Computing%20Systems%20I%20&%20II%20-%20Jerusalem) - **University of Jerusalem**
 * [Introduction to Database Systems](6_Introduction%20to%20Database%20Systems%20-%20Berkeley) - **UC Berkeley** *(REMARK, completed by July/August 2020)*
 * [Full Stack Web Development](7_Full%20Stack%20Web%20Development%20-%20Udacity) - **Udacity** 
-* [Agile Software Engineering](8_Agile%20Software%20Engineering%20-%20UC%20Berkeley) - UC Berkeley
+* [Agile Software Engineering](8_Agile%20Software%20Engineering%20-%20UC%20Berkeley) - **UC Berkeley**
