@@ -1,4 +1,4 @@
-<h1>Introduction to Database Systems</h1>
+# Introduction to Database Systems
 
 **REMARK:** *This course will be completed by **July 2020**, prior to my future employment.*
 
