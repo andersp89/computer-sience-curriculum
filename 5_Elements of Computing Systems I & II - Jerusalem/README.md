@@ -1,6 +1,6 @@
 # Elements of Computing Systems
 
-Completed course "*Nand to Tetris - Building a Modern Computer From First Principles*" - [part I](https://www.coursera.org/learn/build-a-computer) and [part II](https://www.coursera.org/learn/nand2tetris2) by the University of Israel. The course is focused on building a general purpose computer from first principles, based on the **"Von Neumann Architecture"**, including both hardware and software. It is divided into two separate parts:
+Completed course "*Nand to Tetris - Building a Modern Computer From First Principles*" - [part I](https://www.coursera.org/learn/build-a-computer) and [part II](https://www.coursera.org/learn/nand2tetris2) by the University of Israel. The course is focused on building a general purpose computer from first principles, based on the *"Von Neumann Architecture"*, including both hardware and software. It is divided into two separate parts:
 
 ## Part I - Hardware platform
 Part I is focused on building all hardware components of a computer in HDL from a single **NAND gate**, and includes the projects 1 to 6:
