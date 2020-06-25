@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post" id="registerForm">
+        <h2>Create a new user:</h2>
+        <div class="form-group">
+            <div class="alert alert-danger" role="alert" style="display:none;" id="alert">
+                Sorry, the username is already taken! Try another...
+            </div>
+            <input id="userNameInput" autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="password" placeholder="Password" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="confirmation" placeholder="Confirms Password" type="text">
+        </div>
+
+        <button class="btn btn-primary" id="btnSubmit" type="submit">Register now</button>
+    </form>
+
+    <script>
+    /* Checks with Ajax on click on submit whether username is taken */
+    let button = document.getElementById("btnSubmit")
+    let input = document.getElementById("userNameInput")
+    var bool = false;
+
+    // Ping /check with get at every key in input field
+    input.onkeyup = function() {
+        // To avoid sending empty information to check, check for empty
+        if (input.value !== "") {
+            $.get('/check?username=' + input.value, function(data) {
+                if (data == false) {
+                    $("#alert").show();
+                    bool = false;
+                } else if (data == true) {
+                    $("#alert").hide();
+                    bool = true;
+                }
+            });
+        }
+    }
+
+    // Prevent submission at click, and await boolean
+    button.addEventListener("click", function(event){
+        event.preventDefault();
+        if (bool == true) {
+            $('#registerForm').submit();
+        }
+    });
+    </script>
+
+{% endblock %}

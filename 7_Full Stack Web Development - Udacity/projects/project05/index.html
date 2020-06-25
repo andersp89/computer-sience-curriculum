@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Travel planner</title>
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div data-bind="visible: showMenu" class="locationMenu">
+        <h1 id="locationTitle">Travel planner</h1>
+        <div id="searchArea">          
+          <input id="locationSearch" data-bind="value: searchQuery, valueUpdate: 'keyup'" placeholder="Search location here">
+          <button data-bind="click: searchClick">Search</button>
+        </div>
+        <div id="noResults" data-bind="visible: !filteredLocations().length">Sorry, no results matched your search - try again.</div>
+        <ul data-bind="foreach: filteredLocations" id="locationList">
+          <li data-bind="text: title, click: $parent.setCurrentLocation" id="locationListItems"></li>
+        </ul>
+      </div>
+      <img data-bind="click: showHideHamburgerMenu, css: { menuIconHidden: showMenu() == false }" class="menuIcon" src="img/menu-icon.png">
+      <div id="map" class="showMap" data-bind="css: { hideMap: showMenu() == false }"></div>
+    </div>
+
+  <script src="js/lib/jquery-3.2.1.min.js"></script>
+  <script src="js/lib/knockout-3.4.2.js"></script>
+  <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5u9lFY0lnd0IFPfDv29LQ9Pk0QbctPYE&callback=initMap" onerror="mapsErrorHandler()"></script>
+  <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-hq8EqvtnECLXgtwoawa-ZZrrKM97Q28&v=3&callback=initMap" onerror="mapsErrorHandler()"></script>-->
+
+  </body>
+</html>

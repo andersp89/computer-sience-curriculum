@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <h1>Courses Overview</h1>
+
+
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Course Name</th>
+          <th scope="col">School Name</th>
+          <th scope="col">Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for course in courses %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ course[0] }}</td>
+                <td>{{ course[1] }}</td>
+                {% if course[2] == "completed" %}
+                    <td>Yes, completed!</td>
+                {% else %}
+                    <td>Not completed!</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% endblock %}

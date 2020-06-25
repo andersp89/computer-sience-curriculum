@@ -1,0 +1,169 @@
+/* Styles to override bootstrap */
+
+#nonbootstrap {
+    font-family: 'Roboto', sans-serif;
+}
+
+a#nonbootstrap {
+    font-size: 18px;
+}
+
+p#nonbootstrap {
+    font-size: 18px;
+}
+
+
+/* Header */
+
+.header {
+    margin: 10px;
+}
+
+
+/* Responsive icon "zocial" */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+    text-shadow: 3px 3px 3px #aaa;
+}
+
+.logo {
+    font-size: 5vw;
+    color: #4C4C4C;
+    margin-top: 5em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        display: none;
+    }
+}
+
+h1#nonbootstrap {
+    color: #444;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+h2#nonbootstrap {
+    font-family: 'Roboto condensed', sans-serif;
+    font-size: 17px;
+    margin: 10px 0 10px 0;
+}
+
+@media only screen and (max-width: 500px) {
+    h2#nonbootstrap {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+
+.hr {
+    border-bottom: 2px solid;
+    border-color: #d6d6d6;
+    margin: 0 25px 20px 25px;
+}
+
+
+/* Profile picture */
+
+div#profile-text {
+    color: #444;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 15px 5px 5px 5px;
+}
+
+#profile-text-small {
+    font-style: italic;
+    font-size: 14px;
+}
+
+ul#nonbootstrap {
+    margin: 0;
+}
+
+.hr-profile-text {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* Profile text on top of img */
+
+@media only screen and (min-width: 1200px) {
+    div#profile-text {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        left: 60%;
+        padding: 10px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+    .hr-profile-text {
+        display: none;
+    }
+}
+
+
+/* Featured work */
+
+h3#nonbootstrap {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h4#nonbootstrap {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+}
+
+#work-img:hover {
+    cursor: pointer;
+}
+
+#work-description {
+    font-size: 18px;
+    margin-top: -7px;
+}
+
+#work-link:hover {
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.hr-footer {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+p.social-text {
+    font-style: italic;
+}
+
+#social-link-text {
+    margin-left: 10px;
+}
+
+div#social a {
+    margin: 0 5em 0 0;
+    line-height: 2em
+}
+
+div#social a:last-of-type {
+    margin: 0;
+}

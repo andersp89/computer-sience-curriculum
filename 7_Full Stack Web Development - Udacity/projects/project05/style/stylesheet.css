@@ -1,0 +1,211 @@
+html, body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+/* Menu Left */
+.locationMenu {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  height: 100%;
+  line-height: 35px;
+  padding: 10px 10px 0px 10px;
+  width: 220px;
+  margin: 0;
+  position: absolute;
+}
+
+#locationTitle {
+  color: #000;
+  font-size: 22px;
+  margin: 0 0 5px 5px;
+}
+
+#searchArea {
+  vertical-align: middle;
+}
+
+#locationSearch {
+  font-size: 12px;
+  margin: 0 0 10px 5px;
+  width: 65%;
+}
+
+#noResults {
+  width: 100%;
+  line-height: 20px;
+  color: red;
+  font-size: 12px;
+  margin: 5px;
+}
+
+#locationList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 5px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+#locationListItems:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menuIcon {
+  position: absolute;
+  left: 242px;
+  width: 40px;
+  margin: 0 0 0 5px;
+  z-index: 1;
+}
+
+.menuIcon:hover {
+ cursor: pointer; 
+}
+
+.menuIconHidden {
+  left: 0px;
+}
+
+/* Map */
+.showMap {
+  position: absolute;
+  bottom:0px;
+  height: 100%;
+  left: 242px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.hideMap {
+  position: absolute;
+  bottom:0px;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+#infoWindowContainer {
+  display: flex;
+  height: 200px;
+  flex-flow: row wrap;
+}
+
+#infoWindowStreet {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#infoWindowTitle {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 5px;
+}
+
+/* Set size of street view picture */
+#infoWindowPano {
+  width: 200px;
+  height: 200px;
+}
+
+/* Yelp Styles */
+#infoWindowYelp {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#yelpLoading {
+  font-style: italic;
+  margin: 5px 15px 0 0;
+  color: orange;
+  line-height: 20px;
+}
+
+#yelpErrorMsg {
+  font-style: italic;
+  margin: 5px 15px 0 0;
+  color: red;
+  line-height: 20px;
+}
+
+#yelpCategory {
+  display: inline-block;
+  margin: 0;
+  font-style: italic;
+}
+
+#yelpClosed {
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+  color: red;
+}
+
+#yelpOpened {
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+  color: green;
+}
+
+#yelpAddress {
+  margin: 10px 0 5px;
+}
+
+#yelpPhone {
+  margin: 0;
+}
+
+#yelpReviewLogo {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#yelpLogo {
+  display: inline-block;
+  height: 100%;
+  width: 70px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#yelpReviewCount {
+  font-size: 11px;
+  margin: 0;
+}
+
+/* Google Styles */
+.google-error {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100vh;
+  font-size: 1.5em;
+}
+
+#googleErrorMsg {
+  margin-top: 50px;
+  text-align: center;
+  color: red;
+  line-height: 20px;
+}
+
+/* End Yelp CSS */
+
+#execute-request-button {
+  margin-top: 50px;
+}

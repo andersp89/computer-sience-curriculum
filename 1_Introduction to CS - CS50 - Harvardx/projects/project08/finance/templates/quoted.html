@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted Stock
+{% endblock %}
+
+{% block main %}
+
+    <h2>Quoted stock:</h2>
+
+    <ul>
+        {% if quote == "None" %}
+        <li>Sorry, No stock was found</li>
+        {% else %}
+        <li>{{ quote["name"] }}</li>
+        <li>{{ quote["price"] }}</li>
+        <li>{{ quote["symbol"] }}</li>
+        {% endif %}
+    </ul>
+
+    <form action="/quote" method="post">
+        <h4>Quote new stock by symbol:</h4>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote stock</button>
+    </form>
+
+{% endblock %}
