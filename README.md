@@ -9,4 +9,3 @@ Please find courses in Computer Science by Anders Pedersen, below.
 * [Introduction to Database Systems](6_Introduction%20to%20Database%20Systems%20-%20Berkeley) - **UC Berkeley** *(REMARK, completed by July 2020)*
 * [Full Stack Web Development](7_Full%20Stack%20Web%20Development%20-%20Udacity) - **Udacity** 
 * [Agile Software Engineering](8_Agile%20Software%20Engineering%20-%20UC%20Berkeley) - **UC Berkeley**
-ds
