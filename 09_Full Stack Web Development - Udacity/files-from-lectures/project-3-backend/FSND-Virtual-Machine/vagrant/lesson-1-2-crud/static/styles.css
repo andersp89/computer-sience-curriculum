@@ -1,0 +1,15 @@
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.flash {
+    background-color: green;
+    color: white;
+}
+

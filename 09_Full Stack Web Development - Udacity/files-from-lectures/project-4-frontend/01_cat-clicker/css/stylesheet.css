@@ -1,0 +1,29 @@
+#title {
+	text-align: center;
+}
+
+.cat-picture {
+	margin: auto;
+	margin-top: 20px;
+}
+
+img {
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	display: block;
+}
+
+h3 {
+	text-align: center;
+}
+
+#cat-button {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#times-clicked {
+	text-align: center;
+}

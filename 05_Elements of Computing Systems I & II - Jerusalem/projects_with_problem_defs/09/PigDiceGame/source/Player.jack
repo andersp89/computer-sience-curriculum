@@ -1,0 +1,42 @@
+/** Player for the pig dice game */
+class Player {
+	field int score;
+	field RandomGenerator random;
+
+	constructor Player new() {
+		let random = RandomGenerator.new(0);
+		let score = 0;
+		return this;
+	}
+
+	/** Rolls dice, giving int from 1 to 6, by using RandomGenerator and increment score if not 1 */
+	method int roll() {
+		var int num;
+		let num = random.randRange(5) + 1;
+		return num;
+	}
+
+	/** Return the players current score */
+	method int getScore() {
+		return score;
+	}
+
+	/** Sets the players score */
+	method void addScore(int Ascore) {
+		let score = score + Ascore;
+		return;
+	}
+
+	/** Increment number of times random has been called. Is used in pseudo random generator */
+	method void changeRandom(int c) {
+		do random.addCallTime(c);
+		return;
+	}
+
+	/** Dispose random from memory for the user */
+	method void dispose() {
+		do random.dispose();
+		do Memory.deAlloc(this);
+		return;
+	}
+}

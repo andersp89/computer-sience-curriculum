@@ -1,0 +1,71 @@
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px; /*Based on this value, the EM is calculated. 1 em = 12 px. Hence, 50em = 600px */
+	margin: 2em;
+}
+
+/* Include margins and paddings as part of full width and height */
+header, nav, footer, section, article, div {
+	box-sizing: border-box;
+}
+
+article {
+	max-width: 50em;
+	margin-left: auto;
+  	margin-right: auto;
+  	border-bottom: 1px solid #ddd;
+}
+/*
+h1 {
+	margin: 0 auto 1em auto;
+}*/
+
+h1 {
+	color: #444;
+	font-family: 'Roboto condensed', sans-serif;
+	font-size: 4vw;
+	font-weight: 500;
+	margin: 0 auto 0.5em auto;
+}
+
+h2 {
+	margin-bottom: 0;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	padding-bottom: 0.5em;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+footer {
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 1.7em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+div#social {
+  line-height: 2em;
+}
