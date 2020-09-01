@@ -11,4 +11,4 @@ Completed course [Introduction to Database Systems](https://cs186berkeley.net/) 
 	* [Part 1: Lock Manager](cs186/proj2-5/src/main/java/edu/berkeley/cs186/database/concurrency/LockContext.java): Manages all the locks, treating each resource as independent
 	* [Part 2: Implement LockContext and LockUtil](cs186/proj2-5/src/main/java/edu/berkeley/cs186/database/concurrency): Connect objects acoording to hierarchy and provide utility functions
 	* [Part 3: Integrate locking into codebase](cs186/proj2-5/src/main/java/edu/berkeley/cs186/database/Database.java)
-* [Project 5: Recovery](cs186/proj2-5/src/main/java/edu/berkeley/cs186/database/recovery/ARIESRecoveryManager.java): Implemented ARIES Logging handling both forward processing and restart recovery
+* [Project 5: Recovery](cs186/proj2-5/src/main/java/edu/berkeley/cs186/database/recovery/ARIESRecoveryManager.java): Implemented ARIES Logging handling forward processing and restart recovery
